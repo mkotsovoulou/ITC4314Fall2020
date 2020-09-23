@@ -1,0 +1,10 @@
+#! /bin/sh
+
+set -ex
+
+if [ ! -f phpmyadmin ]; then
+    echo "Installing PHPMyAdmin..."
+    composer create-project phpmyadmin/phpmyadmin
+fi
+
+runapp
