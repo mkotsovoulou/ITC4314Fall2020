@@ -2,7 +2,7 @@
 
 set -ex
 
-if [ ! -f phpmyadmin ]; then
+if [ ! -d "./phpmyadmin" ]; then
     echo "Installing PHPMyAdmin..."
     composer create-project phpmyadmin/phpmyadmin
 fi
