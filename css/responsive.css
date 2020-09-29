@@ -1,0 +1,49 @@
+body {
+  background-color: red;
+}
+
+/* if the browser window is 480px or smaller */
+@media only screen and (max-width: 480px) {
+  
+  body {
+    background-color: blue;
+  }
+  
+  
+  
+}
+/* if the browser window is 481px or greater */
+@media only screen and (min-width: 481px) {
+  
+  body {
+    background-color: green;
+  }
+  
+  
+  
+}
+
+/* if the browser window is 768px or greater */
+@media only screen and (min-width: 768px) {
+  
+  body {
+    background-color: orange;
+  }
+  
+  
+  
+}
+
+/* if the browser window is 1024px or greater */
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  
+}
