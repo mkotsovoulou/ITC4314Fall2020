@@ -2,23 +2,30 @@ body {
   background-color: red;
 }
 
-/* if the browser window is 480px or smaller */
-@media only screen and (max-width: 480px) {
+.BigGreenHeading {
+  font-size: 4em;
+  color: green;
+}
+
+/* if the browser window is 600px or smaller */
+@media only screen and (max-width: 600px) {
   
   body {
     background-color: blue;
   }
   
-  
+  #logo {
+    display: none;
+  }
   
 }
+
 /* if the browser window is 481px or greater */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 601px) {
   
   body {
     background-color: green;
   }
-  
   
   
 }
@@ -29,7 +36,6 @@ body {
   body {
     background-color: orange;
   }
-  
   
   
 }
@@ -47,3 +53,4 @@ body {
   
   
 }
+
