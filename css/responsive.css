@@ -20,7 +20,7 @@ body {
   
 }
 
-/* if the browser window is 481px or greater */
+/* if the browser window is 601px or greater */
 @media only screen and (min-width: 601px) {
   
   body {
