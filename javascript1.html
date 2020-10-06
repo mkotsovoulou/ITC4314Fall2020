@@ -5,16 +5,19 @@
 	<title>Javascript Basics</title>
 </head>
 <body>
-  <h1>
+  <h1 id="first">
     Welcome
   </h1>
 	
-  <h1>
+  <h1 id="second">
     After Javascript
   </h1>
   
      
   <script	type="text/javascript" language="javascript">	
+    var myHeading = document.getElementById("first");
+    myHeading.innerHTML="I CHANGED IT";
+    
     x = 5;
     document.write(typeof x);
     document.write("</br>");

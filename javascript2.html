@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Javascript 2</title>
+</head>
+<body>
+  
+  <h1> Functions and Loops </h1>
+  
+	<script> 
+    
+    start=window.prompt("Type a number to start counting from ");
+    finish=window.prompt("Type a number to stop counting at");
+
+    printNumbers(start, finish)
+    
+    console.log("Executed the function!"); //for debugging purposes
+    
+    function printNumbers(startFrom, howMany) {
+      
+      	for (var x=startFrom; x<=howMany; x++) {
+        document.write(x);
+        document.write('<br>');
+        
+        }
+    } 
+	</script>
+</body>
+</html>
