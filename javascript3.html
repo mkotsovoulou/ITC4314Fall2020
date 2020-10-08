@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Arrays</title>
+</head>
+<body>
+	
+  
+  <script>
+  	var myArray = [4,"hello",23,true,78,90];
+    
+    document.write("<h1> Using a for loop </h1>");
+    for (var i=0; i< myArray.length; i++) {
+      document.write(i + " " + myArray[i] + "<br>");
+    }
+    
+    document.write("<h1> Using foreach loop </h1>");
+    
+    myArray.forEach( function (item, index) {
+      document.write(index + " " + item + "<br>");
+    });
+    
+  </script>
+</body>
+</html>

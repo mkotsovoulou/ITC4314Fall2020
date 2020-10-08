@@ -6,17 +6,29 @@
 </head>
 <body>
 	
-  <h1>
-    5 Times Table
+  <h1 id="title">
+    Press the button
   </h1>
   
-  <table border="1">
-    <tr> <th> Number </th> <th> Multiplier </th> 	<th> Result</th>	</tr>
-    <tr> <td> 5 </td> <td> 1 </td> 	<td> 5 </td>	</tr>
-    <tr> <td> 5 </td> <td> 2 </td> 	<td> 10 </td> </tr>
-    .....
-  </table>
   
+  <button type="button" onclick="createTimesTable();">Click to generate!
+  </button>
+  
+  <script>
+    document.getElementById("title").style.color = "red";
+    
+    function createTimesTable() {
+      input=window.prompt("Give a number for which a table will be created");
+      document.write('<table border="1">');
+      for (var i=1;i<=10;i++)
+      {
+        document.write("<tr><td>"+i+"</td><td>"+input+"</td><td>"+(i*input)+"</td></tr>");
+      }
+      document.write("</table>");
+      
+      document.getElementById("title").innerHTML = input + " Times Table";
+    }
+  </script>
   
 </body>
 </html>
