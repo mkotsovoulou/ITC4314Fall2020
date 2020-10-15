@@ -101,3 +101,11 @@ button {
   margin-left: 100px;
   min-height: 400px;
 }
+
+.capitalLetters {
+  text-transform: uppercase;
+}
+
+.lowerLetters {
+   text-transform: lowercase;
+}
