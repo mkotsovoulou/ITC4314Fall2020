@@ -9,8 +9,14 @@
     <div id="flashMessage">
         Your changes have been saved!
     </div>
+   
     <div class="blogNewPost">
         <h1 class="blogPage-title">New Blog Post</h1>
+        <p class="blogUser-area">
+            <label>Blogger email</label>
+            <input type="email" id="blogUser" placeholder="Author email">  <!-- INPUT TYPES HAVE VALUES -->
+        </p>
+      
         <p class="blogTitle-area">
             <label>Title</label>
             <input type="text" id="blogTitleInput">  <!-- INPUT TYPES HAVE VALUES -->
@@ -24,11 +30,15 @@
         </p>
     </div>
 
-    <div class="blogPreviewArea"> <!-- HTML TAGS HAVE INNERHTML -->
-        <h2 id="blogTitlePreview">Your Title Will Appear here</h2>
+    <div class="blogPreviewArea"> <!-- HTML TAGS HAVE text INNERHTML -->
+        <h2 id="blogTitlePreview">Preview Area</h2>
         <div id="blogContentPreview"> Your content will appear here when you click PREVIEW
         </div>
     </div>
+  
+  <div id="messages" style="color:green;">
+    
+  </div>
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
