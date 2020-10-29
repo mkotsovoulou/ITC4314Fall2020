@@ -24,6 +24,8 @@ $('#submitBtn').click(function(){
   //  a. Use the val() method to get the values from the restaurant name and restaurant review  input fields. Save them both to variables.
   const restaurantName = $('#restaurantNameInput').val();
   const restaurantReview = $('#restaurantReviewInput').val();
+  mynewReview = '<div class="review"><h3' + restaurantName + '</h3><p>'+ restaurantReview + '</p></div>';
+ 
   //  b. Insert the restaurant name value into the #newRestaurant h3 tag 
   $('#newRestaurant h3').text(restaurantName);
   //  c. Insert the restaurant review value into the #newRestaurant paragraph tag
