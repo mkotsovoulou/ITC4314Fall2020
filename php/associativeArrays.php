@@ -1,7 +1,9 @@
 <?php
 $emp1 = array('Name'=>'Maira', 'Salary'=>100, 'Department'=> 'IT');
 $emp2 = array('Name'=>'Jes', 'Salary'=>200, 'Department'=> 'IT');
+$allEmployees = array($emp1, $emp2);
 
+var_dump ($allEmployees);
 //foreach field in emp1 array
 foreach ($emp1 as $key=>$value) { 
   echo $key . ' ' . $value . '<br />'; 
