@@ -1,3 +1,4 @@
 /vendor/
 /phpmyadmin/
 /phpdb/config.php
+mydb.sh
