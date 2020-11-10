@@ -1,7 +1,7 @@
 /*alert("JS RUNNING");*/
 $(document).ready(function() {
  $('#registrationForm').submit(function (e) {
-   //e.preventDefault(); 
+   e.preventDefault(); //We will handle the form submit and not the form
    var password1 = $('#password1').val();
    var password2 = $('#password2').val();
 
@@ -32,7 +32,8 @@ $(document).ready(function() {
                  $('#flashMessage').html(msg[1]);
                  $('#flashMessage').slideDown(1000).delay(1000).slideUp();
             }
-     }); // ajax call
+     }); // end of done in ajax call
    } //else from the validate password
- });
+   
+ }); // end of registration form submit
 });
