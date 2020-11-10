@@ -14,12 +14,12 @@
         $results = $query->fetchALL(PDO::FETCH_ASSOC); 
     ?>
        
-     <table class="table">
+  <table class="table">
   <thead class="thead-light">
      <tr><th> id </th><th> book title </th><th> quantity </th><th>price</th><th> description </th><th> date added </th><th> book cover</th></tr>
        <tbody>
     
-    <?php    
+<?php    
 foreach($results as $row)
  {
      echo "<tr><td>".$row['id']."</td><td>".$row['title']."</td><td>".$row['quantity']." items</td><td>".$row['price']." $</td><td>".$row['description']."</td><td>".$row['date_added']."</td><td><img src='images/".$row['image_filename']."' width='50px'></td></tr>";
