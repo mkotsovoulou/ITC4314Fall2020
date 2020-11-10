@@ -15,7 +15,7 @@
  <div class="container mt-5 p-5" style="background-color:#ededed;">
     <div id="flashMessage" class="alert fade show" role="alert" style="display:none;"></div>
    
-    <form id="registrationForm" action="#" method="POST">
+    <form id="registrationForm">
     <div class="form-group">
     <label for="username">Username</label>
     <input type="text" class="form-control" id="username" placeholder="Type your username...">
@@ -41,7 +41,6 @@
 
      </form>
       </div>
-
 
 
     </div>
