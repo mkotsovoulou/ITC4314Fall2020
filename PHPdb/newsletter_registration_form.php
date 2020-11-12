@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Registration</title>
   </head>
-
   <body>
-    <h1>
-      Newsletter registration 1
-    </h1>
+    <h1> Newsletter registration 1 </h1>
     <h2>
       Submits the form to newsletter_registration.php
     </h2>

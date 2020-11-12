@@ -13,17 +13,11 @@ if ($_POST['p_email']) {
     $message["status"]=1;
     $message["text"]="You have been registered...";
   } catch (PDOException $e) {
-    if ($e->getCode() == 23000) {
-      $message["status"]=0; 
-      $message["text"]= "This email is already registered.";
-    }
-    else {
       $message["status"]= $e->getCode(); 
       $message["text"]= $e->getMessage();
-    }
   }
   echo $message["text"];
- // echo json_encode($message);
+  echo json_encode($message);
 } else {
   echo "Use the <a href='newsletter_registration_form.php'> email registration form </a> to register!";
   exit;

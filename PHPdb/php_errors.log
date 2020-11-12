@@ -76,3 +76,18 @@ Stack trace:
 [12-Nov-2020 11:40:07 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /mnt/project/PHPdb/newsletter_registration.php on line 14
 [12-Nov-2020 11:40:55 UTC] PHP Warning:  Use of undefined constant messages - assumed 'messages' (this will throw an Error in a future version of PHP) in /mnt/project/PHPdb/newsletter_registration.php on line 20
 [12-Nov-2020 11:42:27 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /mnt/project/PHPdb/newsletter_registration.php on line 19
+[12-Nov-2020 12:24:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on array in /mnt/project/PHPdb/displaystudents.php:14
+Stack trace:
+#0 {main}
+  thrown in /mnt/project/PHPdb/displaystudents.php on line 14
+[12-Nov-2020 12:25:44 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /mnt/project/PHPdb/displaystudents.php on line 18
+[12-Nov-2020 15:27:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /mnt/project/PHPdb/newsletter_registration.php on line 27
+[12-Nov-2020 15:28:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'a@a.com' for key 'newsletter.email_UNIQUE' in /mnt/project/PHPdb/newsletter_registration.php:12
+Stack trace:
+#0 /mnt/project/PHPdb/newsletter_registration.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /mnt/project/PHPdb/newsletter_registration.php on line 12
+[12-Nov-2020 15:29:30 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /mnt/project/PHPdb/newsletter_registration.php on line 27
+[12-Nov-2020 15:30:09 UTC] PHP Parse error:  syntax error, unexpected '/' in /mnt/project/PHPdb/newsletter_registration.php on line 18
+[12-Nov-2020 15:30:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /mnt/project/PHPdb/newsletter_registration.php on line 34
+[12-Nov-2020 15:31:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /mnt/project/PHPdb/newsletter_registration.php on line 34
