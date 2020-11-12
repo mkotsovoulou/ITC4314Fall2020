@@ -1,7 +1,9 @@
 /*alert("JS RUNNING");*/
 $(document).ready(function() {
  $('#registrationForm').submit(function (e) {
-   e.preventDefault(); //We will handle the form submit and not the form
+   //prevent the default form submit operation since we will manually submit the form using ajax
+   e.preventDefault();
+   
    var password1 = $('#password1').val();
    var password2 = $('#password2').val();
 
@@ -13,27 +15,35 @@ $(document).ready(function() {
    else {
      var username = $('#username').val();
      var email = $('#email').val();
-     /* Insert the data into the database  if everything ok --> call insert_user.php */
+ 
     $.ajax({
       type: "POST",
-      url: "insert_user.php",
+      url: "insert_user.php", //call php to insert the data in the db
       data: { 
             p_username: username,
             p_password: password1,
             p_email : email
             }
-    }).done(function (msg) { //the msg is returned a json encoded array from the php
-            if (!msg[0]){
+    }).done(function (msg) { //the msg is returned in a json encoded array from the php
+            console.log(JSON.stringify(msg));
+            if (!msg.status){
                  $('#flashMessage').removeClass('alert-success').addClass('alert-danger');
-                 $('#flashMessage').html(msg[1]);
-                 $('#flashMessage').slideDown(1000).delay(1000).slideUp();
             } else {
                  $('#flashMessage').removeClass('alert-danger').addClass('alert-success');
-                 $('#flashMessage').html(msg[1]);
-                 $('#flashMessage').slideDown(1000).delay(1000).slideUp();
+                //CLEAR THE FIELDS 
+                 $('#username').val("");
+                 $('#password1').val("");
+                 $('#password2').val("");
+                 $('#email').val("");
+//    OR REDIRECT TO ANOTHER PAGE!!!
+//                	setTimeout(function() {
+// 					              window.top.location = "index.php";
+// 				          }, 1500);
+              
             }
+        $('#flashMessage').html(msg.text);
+        $('#flashMessage').slideDown(1000).delay(1000).slideUp();
      }); // end of done in ajax call
    } //else from the validate password
-   
  }); // end of registration form submit
 });
