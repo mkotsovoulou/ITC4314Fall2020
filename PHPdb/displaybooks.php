@@ -1,14 +1,17 @@
+<?php session_start(); ?>
 <html>
   <head>
     <title> students</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color:<?php echo $_SESSION["favColor"];?>">
     <h1 class="display-1">
       List of Books Now
     </h1>
 
     <?php
+     echo 'Your favorite color is ' . $_SESSION["favColor"];
+    
     include "db.php";
     $query = $db->query("select * from books");
     $results = $query->fetchALL(PDO::FETCH_ASSOC); 

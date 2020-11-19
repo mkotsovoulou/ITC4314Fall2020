@@ -91,3 +91,10 @@ Stack trace:
 [12-Nov-2020 15:30:09 UTC] PHP Parse error:  syntax error, unexpected '/' in /mnt/project/PHPdb/newsletter_registration.php on line 18
 [12-Nov-2020 15:30:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /mnt/project/PHPdb/newsletter_registration.php on line 34
 [12-Nov-2020 15:31:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /mnt/project/PHPdb/newsletter_registration.php on line 34
+[19-Nov-2020 15:14:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /mnt/project/PHPdb/sessions1.php on line 13
+[19-Nov-2020 15:14:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /mnt/project/PHPdb/sessions1.php on line 13
+[19-Nov-2020 15:14:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /mnt/project/PHPdb/sessions1.php on line 12
+[19-Nov-2020 15:20:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/clearSession.php:5) in /mnt/project/PHPdb/clearSession.php on line 6
+[19-Nov-2020 15:48:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/setSession.php:5) in /mnt/project/PHPdb/setSession.php on line 6
+[19-Nov-2020 15:49:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/setSession.php:5) in /mnt/project/PHPdb/setSession.php on line 6
+[19-Nov-2020 15:51:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /mnt/project/PHPdb/checkSession.php on line 11
