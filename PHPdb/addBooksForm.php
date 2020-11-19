@@ -1,3 +1,10 @@
+<?php
+//To hide this page from non admin users uncomment this code
+//session_start();
+//if ($_SESSION["Admin"]!='Y') {
+//header('Location:displaybooks.php');
+//}
+?>
 <html>
   <head>
     <meta charset="UTF-8">

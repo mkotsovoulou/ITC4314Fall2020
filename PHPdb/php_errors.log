@@ -98,3 +98,13 @@ Stack trace:
 [19-Nov-2020 15:48:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/setSession.php:5) in /mnt/project/PHPdb/setSession.php on line 6
 [19-Nov-2020 15:49:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/setSession.php:5) in /mnt/project/PHPdb/setSession.php on line 6
 [19-Nov-2020 15:51:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /mnt/project/PHPdb/checkSession.php on line 11
+[19-Nov-2020 16:04:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /mnt/project/PHPdb/addBooksForm.php on line 3
+[19-Nov-2020 16:06:41 UTC] PHP Parse error:  syntax error, unexpected 'and' (T_LOGICAL_AND) in /mnt/project/PHPdb/addBooksForm.php on line 3
+[19-Nov-2020 16:06:51 UTC] PHP Parse error:  syntax error, unexpected '&' in /mnt/project/PHPdb/addBooksForm.php on line 3
+[19-Nov-2020 16:13:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /mnt/project/PHPdb/addBooksForm.php on line 5
+[19-Nov-2020 16:15:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function headers() in /mnt/project/PHPdb/addBooksForm.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/project/PHPdb/addBooksForm.php on line 6
+[19-Nov-2020 16:22:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/addBooksForm.php:3) in /mnt/project/PHPdb/addBooksForm.php on line 6
+[19-Nov-2020 16:22:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/addBooksForm.php:3) in /mnt/project/PHPdb/addBooksForm.php on line 6
