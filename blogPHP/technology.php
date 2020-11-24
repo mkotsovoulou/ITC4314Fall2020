@@ -1,4 +1,5 @@
 <?php
+$currentpage="technology";
 include('header.php');
 $text = "Hello from technology today!!!";
 include('jumbotron.php'); ?>

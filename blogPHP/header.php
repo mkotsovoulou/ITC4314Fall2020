@@ -57,9 +57,9 @@
       
     <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
-      <a class="p-2 text-muted" href="index.php">Home</a>
-      <a class="p-2 text-muted" href="world.php">World</a>
-      <a class="p-2 text-muted" href="technology.php">Technology</a>
+      <a class="p-2 text-muted <?php  ?>" href="index.php">Home</a>
+      <a class="p-2 text-muted <?php  ?>" href="world.php">World</a>
+      <a class="p-2 text-muted <?php  ?>" href="technology.php">Technology</a>
       <a class="p-2 text-muted" href="#">Design</a>
       <a class="p-2 text-muted" href="#">Culture</a>
       <a class="p-2 text-muted" href="#">Business</a>
