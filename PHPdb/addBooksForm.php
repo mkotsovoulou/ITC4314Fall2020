@@ -1,5 +1,6 @@
 <?php
-//To hide this page from non admin users uncomment this code
+//To hide this page from non admin users uncomment this code2020#
+//
 //session_start();
 //if ($_SESSION["Admin"]!='Y') {
 //header('Location:displaybooks.php');
