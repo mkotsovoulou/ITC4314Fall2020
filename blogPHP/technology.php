@@ -1,4 +1,4 @@
-<?php
+<?php  
 $currentpage="technology";
 include('header.php');
 $text = "Hello from technology today!!!";

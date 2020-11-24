@@ -1,5 +1,5 @@
 <div class="container">
-<?php  
+<?php 
 if (!isset($text) || empty($text))
 $text= "Welcome";
 ?>

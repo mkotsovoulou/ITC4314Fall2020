@@ -1,4 +1,4 @@
-<?php
+<?php  
 $currentpage="home";
 include('header.php');
 $text = "This is the home page!";
