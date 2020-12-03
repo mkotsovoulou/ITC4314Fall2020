@@ -108,3 +108,18 @@ Stack trace:
   thrown in /mnt/project/PHPdb/addBooksForm.php on line 6
 [19-Nov-2020 16:22:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/addBooksForm.php:3) in /mnt/project/PHPdb/addBooksForm.php on line 6
 [19-Nov-2020 16:22:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/project/PHPdb/addBooksForm.php:3) in /mnt/project/PHPdb/addBooksForm.php on line 6
+[03-Dec-2020 15:28:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list' in /mnt/project/PHPdb/usercount.php:13
+Stack trace:
+#0 /mnt/project/PHPdb/usercount.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /mnt/project/PHPdb/usercount.php on line 13
+[03-Dec-2020 15:29:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list' in /mnt/project/PHPdb/usercount.php:13
+Stack trace:
+#0 /mnt/project/PHPdb/usercount.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /mnt/project/PHPdb/usercount.php on line 13
+[03-Dec-2020 15:29:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list' in /mnt/project/PHPdb/usercount.php:13
+Stack trace:
+#0 /mnt/project/PHPdb/usercount.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /mnt/project/PHPdb/usercount.php on line 13
