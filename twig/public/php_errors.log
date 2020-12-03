@@ -1,0 +1,10 @@
+[03-Dec-2020 13:31:42 UTC] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Template "hello.twig" is not defined. in /mnt/project/twig/vendor/twig/twig/src/Loader/ArrayLoader.php:70
+Stack trace:
+#0 /mnt/project/twig/vendor/twig/twig/src/Environment.php(299): Twig\Loader\ArrayLoader->getCacheKey('hello.twig')
+#1 /mnt/project/twig/vendor/twig/twig/src/Environment.php(381): Twig\Environment->getTemplateClass('hello.twig')
+#2 /mnt/project/twig/vendor/twig/twig/src/Environment.php(359): Twig\Environment->loadTemplate('hello.twig')
+#3 /mnt/project/twig/vendor/twig/twig/src/Environment.php(318): Twig\Environment->load('hello.twig')
+#4 /mnt/project/twig/public/index.php(9): Twig\Environment->render('hello.twig', Array)
+#5 {main}
+  thrown in /mnt/project/twig/vendor/twig/twig/src/Loader/ArrayLoader.php on line 70
+[03-Dec-2020 13:38:15 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /mnt/project/twig/public/index.php on line 9

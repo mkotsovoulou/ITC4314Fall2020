@@ -25,7 +25,7 @@ $(document).ready(function() {
             p_email : email
             }
     }).done(function (msg) { //the msg is returned in a json encoded array from the php
-            console.log(JSON.stringify(msg));
+           // console.log(JSON.stringify(msg));
             if (!msg.status){
                  $('#flashMessage').removeClass('alert-success').addClass('alert-danger');
             } else {
