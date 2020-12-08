@@ -5,5 +5,5 @@ session_unset();
 echo "Your session is now cleared!!!";
 //header('Location:sessions1.php');
 ?>
-<meta http-equiv="refresh" content="0;url=sessions1.php" />
+<meta http-equiv="refresh" content="0;url=login.php" />
 

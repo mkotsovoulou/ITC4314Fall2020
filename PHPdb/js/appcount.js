@@ -9,7 +9,7 @@ $(document).ready(function() {
       data: {
             p_username: username
             }
-    }).done(function (msg) { //the msg is returned in a json encoded array from the php
+     }).done(function (msg) { //the msg is returned in a json encoded array from the php
            // console.log(JSON.stringify(msg));
            $('#flashMessage').removeClass('alert-danger').addClass('alert-success');
            $('#flashMessage').html(msg.text);

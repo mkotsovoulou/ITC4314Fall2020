@@ -14,7 +14,7 @@ try {
    $results = $db->prepare("update usercount set countt = countt+1 where username = ?");
    $results->bindValue(1,$username);
    $results->execute();
-   $message["text"]=$username. " Counted!!!";
+   $message["text"]=$username. " Counted!!!" ;
 }
 
 echo json_encode($message);

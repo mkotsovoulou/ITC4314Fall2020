@@ -18,12 +18,12 @@
     <h2>
       
     </h2>
-    <form method="POST" action="addBooks.php">
+    <form method="POST" action="addBooks.php" enctype="multipart/form-data">
       <input type="text" id="p_title" name="p_title" placeholder="Book title..."> <br>
           <input type="text" id="p_quantity" name="p_quantity" placeholder="Book quantity..."><br>
           <input type="text" id="p_description" name="p_description" placeholder="Book description..."><br>
           <input type="text" id="p_price" name="p_price" placeholder="Book price..."><br>
-          <input type="text" id="p_image" name="p_image" placeholder="Book image filename"><br>
+        Choose File  <input type="file" id="p_image" name="p_image"><br>
       <input type="submit">
     </form>
     <div id="message">
